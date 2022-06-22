@@ -1,25 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
+import Title from './components/Title';
+import Email from './components/Email';
+import Forget from './components/Forget';
+import LoginFrame from './components/LoginFrame';
+import Bottom from './components/bottom';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [isShow,setIsShow] = useState(false);
+      return (
+      <div className='app'>
+        <button onClick={()=>setIsShow(!isShow)}>시작하기</button>
+        {isShow && (
+          <div className='login-frame'>
+            <Title />
+            <Email />
+            <Forget/>
+            <Bottom/>
+          </div>
+        )}
+      </div>
+      )
 }
 
 export default App;

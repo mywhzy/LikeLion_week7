@@ -1,0 +1,21 @@
+.login-frame{
+  /* 로그인 */
+
+
+/* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px;
+
+  position: relative;
+  width: 374px;
+  height: 524px;
+
+  background: #ffffff;
+  border-radius: 8px;
+
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}

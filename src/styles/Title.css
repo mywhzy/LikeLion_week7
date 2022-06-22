@@ -1,0 +1,21 @@
+.subTitle-login{
+  /* 로그인 */
+
+
+  left: 38.38%;
+  right: 38.89%;
+  top: 76.54%;
+  bottom: -3.7%;
+
+  font-family: 'Noto Sans KR', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+/* identical to box height */
+
+  text-align: center;
+
+  color: #000000;
+  margin-top:24px;
+}
